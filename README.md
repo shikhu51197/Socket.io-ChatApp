@@ -108,14 +108,20 @@ For detailed information on how to use our API, please refer to the [API documen
 | --------------- | -------- | -------------------------------------- | ----------------- |
 | Welcome Message | POST /    | Provides a welcome message to the API and Authenticate. | - Welcome message & user login  |
 
-## Users![Screenshot (1962)](https://github.com/shikhu51197/Socket.io-ChatApp/assets/107506646/4645bffb-a7e1-4ff5-ba21-baf431825116)
+![Screenshot (1962)](https://github.com/shikhu51197/Socket.io-ChatApp/assets/107506646/4645bffb-a7e1-4ff5-ba21-baf431825116)
+
+
+## Users
 
 
 | Route           | Endpoint                       | Description                                                 | Features                               |
 | --------------- | ------------------------------ | ----------------------------------------------------------- | -------------------------------------- |
 | user chat page     |  /chat               |  chat with multiple users.                                          | - Chat with login user        |
 
+
+
 ![Screenshot (1963)](https://github.com/shikhu51197/Socket.io-ChatApp/assets/107506646/e9a2a5e7-d4ff-4910-9991-acdda675ff72)
+
 --- 
 
 
