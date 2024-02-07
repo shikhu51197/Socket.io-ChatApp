@@ -102,16 +102,17 @@ MONGO_URL=`YOUR_MONGO_ATLAS_URL`
 For detailed information on how to use our API, please refer to the [API documentation](Backend/docs/ApiDocs.md).
 
 
-## Welcome Route
+## Welcome Users Route
 
 | Route           | Endpoint | Description                            | Features          |
 | --------------- | -------- | -------------------------------------- | ----------------- |
 | Welcome Message | POST /    | Provides a welcome message to the API and Authenticate. | - Welcome message & user login  |
 
-![Screenshot (1962)](https://github.com/shikhu51197/Socket.io-ChatApp/assets/107506646/4645bffb-a7e1-4ff5-ba21-baf431825116)
 
 
-## Users
+![Screenshot (1962)](https://github.com/shikhu51197/Socket.io-ChatApp/assets/107506646/6cadc0e7-0065-4c6b-ba7e-c0ecf3a1e6c8)
+
+## Users Chat
 
 
 | Route           | Endpoint                       | Description                                                 | Features                               |
@@ -119,8 +120,10 @@ For detailed information on how to use our API, please refer to the [API documen
 | user chat page     |  /chat               |  chat with multiple users.                                          | - Chat with login user        |
 
 
+![Screenshot (1963)](https://github.com/shikhu51197/Socket.io-ChatApp/assets/107506646/b3cfe2d5-fbd2-4259-8349-29e1825c2184)
 
-![Screenshot (1963)](https://github.com/shikhu51197/Socket.io-ChatApp/assets/107506646/e9a2a5e7-d4ff-4910-9991-acdda675ff72)
+
+
 
 --- 
 
