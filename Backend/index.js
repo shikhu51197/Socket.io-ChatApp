@@ -5,6 +5,7 @@ const socketIO = require("socket.io");
 
 const app = express();
 const port = 4500 || process.env.PORT;
+const FRONTEND_URL = process.env.FRONTEND_URL || "https://socket-io-chat-app-p1dy.vercel.app/";
 
 const users = [{}];
 
@@ -48,4 +49,11 @@ io.on("connection", (socket) => {
 
 server.listen(port, () => {
   console.log(`Working`);
+});
+
+
+app.get("/", (req, res) => {
+  res.send(
+    `<h1>Welcome Users , backend site is Working. click <a href=${FRONTEND_URL}>here</a> to visit frontend site.</h1>`
+  );
 });
