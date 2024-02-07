@@ -1,50 +1,55 @@
-# Socket.io-ChatApp
-https://chatapp-7jhb.onrender.com/
+> 💻 PROJECT NAME ✨ => 💻  : # Socket.io Live Chat with React and CSS 🧑‍🏫
+<br>
 
-https://socket-io-chat-app-p1dy.vercel.app/
+---
+## 🔗 Profile Links✨
 
 
-# Growth_Assignment Word Count App
+| Resume | Github                                                                                                                                   | Linkedin                                                                                                                                                            | Portfolio                                                                                                                                    | Blogger                                                                                                                                                           | Medium                                                                                                                                    |
+| ------------- | ---------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| [![Resume](https://img.shields.io/badge/my_Resume-E75480?style=for-the-badge&logo=ko-fi&logoColor=white)](https://drive.google.com/file/d/1YE62u2ChjmlR-EKeqZ75UvFMg_KcY86T/view?usp=sharing) | [![github](https://img.shields.io/badge/github-1DA1F2?style=for-the-badge&logo=github&logoColor=white)](https://github.com/shikhu51197/)| [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/shikha-gupta-12a2b5199) |[![portfolio](https://img.shields.io/badge/my_portfolio-18A303?style=for-the-badge&logo=ionic&logoColor=white)](https://shikhu51197.github.io/) |[![Blogger](https://img.shields.io/badge/Blogger-FE5A1D?style=for-the-badge&logo=Blogger&logoColor=white)](https://wwwartificial-intelligence.blogspot.com/) |[![Medium](https://img.shields.io/badge/Medium-000?style=for-the-badge&logo=Medium&logoColor=white)](https://medium.com/@sg780060) |  
 
-This URL Insight Tracker based web application is designed to extract and store word counts and media details from user-provided URLs. These insights are saved in a database, making them accessible for users. The application also provides the ability to retrieve all insights for a specific user, with optional filtering based on favorite status.
+---
 
+✨# Overview :-
+This project is a simple real-time chat application built using Socket.io, React, and CSS. It allows users to join chat rooms, enter a username, and engage in real-time chat with multiple users.
+---
+
+# installed on your machine:
+
+    Node.js
+    npm (Node Package Manager)
 
 ## Deployed Link Frontend
 
 ```bash
-   https://growthcx-word-count.netlify.app/
+  https://socket-io-chat-app-p1dy.vercel.app/
 ```
 
 ## Deployed Link Backend
 
 ```bash
-   https://growthcx-word-count-app.onrender.com/
+   https://chatapp-7jhb.onrender.com/
 ```
+# Folder Structure
 
-## API Documentation Swagger
+     /server: Contains the Socket.io server code.
+    /client: Contains the React client code.
+    /public: Public assets.
+    
+---
 
-```bash
-   https://growthcx-word-count-app.onrender.com/api-docs/
-```
+## Key Features :-
 
-## Key Features
+- **User Authentication**: Users can enter a unique username on the homepage before accessing the chat application.
+- **Real-time Chat**: Engage in live chat with multiple users in real-time.
 
-- **High Performance**: ensures that the tracking site can handle high traffic loads efficiently.
-- **Scalability**: easily adapt to increased user demand by adding more servers or resources as needed.
-- **API Development**: building APIs, to interact with frontend interfaces, mobile apps, and third-party services.
-- **Database Integration**: can integrate with MongoDB, offering flexibility in choosing the right database solution.
-- **Security**: protects sensitive customer information, such as encryption and authentication mechanisms.
-- **User Authentication**: implement user accounts for features like saving preferences, accessing history across devices, and maintaining personalized settings.
-- **URL Analysis**: Retrieve and store word count and media details from user-supplied URLs.
-- **Insight Storage**: Save insights in a database for future reference and analysis.
-- **User-Specific Insights**: Fetch all insights associated with a specific user.
-- **Favorite Status Filtering**: Optional filtering to view insights based on favorite status.
-
+---
 
 ## Tech Stack
 
-- Frontend: HTML, CSS, JavaScript, Bootstrap
-- Backend: Node.js, Express.js, MongoDB
+- Frontend: Socket.io React CSS3
+- Backend: Node.js, Express.js
 
 
 ## Getting Started
@@ -69,7 +74,7 @@ This URL Insight Tracker based web application is designed to extract and store 
 
 4. Application Start
    ```
-   npm run server
+   npm start
    ```
 
 5. Go to Frontend Directory
@@ -78,7 +83,8 @@ This URL Insight Tracker based web application is designed to extract and store 
    ```
 
 6. Open With Live Server
-
+7. Enter a username on the homepage and click on the "Login" button.
+8. Navigate to the chat page to engage in real-time chat with multiple users.
 
 ## Environment Variables Backend
 
@@ -87,36 +93,8 @@ You will need to set the following environment variables in a `.env` file:
 ```ini
 PORT=`YOUR_REQUIRED_PORT`
 MONGO_URL=`YOUR_MONGO_ATLAS_URL`
-SALT_ROUNDS=`PROVIDE_A_NUMBER_FOR_HASHING_SALT_ROUND`
-JWT_LOGIN_SECRET=`CREATE_A_SECRET_FOR_LOGIN_TOKEN`
+
 ```
-
-
-### Users
-
-- Register as a user.
-- Log in with credentials using JWT token for authentication.
-- Log out (blacklist the token).
-
-### Insights
-
-- Retrieve word count and media details from a URL and save in database as an insight.
-- Get all insights for a specific user with optional filtering by favorite status(if we not pass any query then we got all insights.).
-- Add an insight to favorites.
-- Delete an insight by ID
-
-
-
-#### Dummy User Credentials 1: 
-email: `ankitamaddheshiyacs@gmail.com`
-password: `Ankita`
-
-
-#### Dummy User Credentials 2: 
-email: `ankitamaddheshiyacs@gmail.com`
-password: `chhunni`
-
-
 
 
 ## Endpoints Reference
@@ -130,26 +108,32 @@ For detailed information on how to use our API, please refer to the [API documen
 | --------------- | -------- | -------------------------------------- | ----------------- |
 | Welcome Message | GET /    | Provides a welcome message to the API. | - Welcome message |
 
-## Swagger Docs
-
-| Route             | Endpoint      | Description                       | Features                |
-| ----------------- | ------------- | --------------------------------- | ----------------------- |
-| API Documentation | GET /api-docs | Provides a Documentation for API. | - Swagger Documentation |
-
 ## Users
 
-| Route           | Endpoint                       | Description                                                                                              | Features                               |
-| --------------- | ------------------------------ | -------------------------------------------------------------------------------------------------------- | -------------------------------------- |
-| Register User   | POST /user/register            | Register a new user with provided credentials.                                                           | - User registration                    |
-| Login User      | POST /user/login               | Authenticate and log in a user with JWT token.                                                           | - User login with JWT token            |
-| Logout User     | POST /user/logout              | Blacklist the token to log out the user securely.(user Must Logged in)                                   | - Secure token blacklisting            |
+| Route           | Endpoint                       | Description                                                 | Features                               |
+| --------------- | ------------------------------ | ----------------------------------------------------------- | -------------------------------------- |
+| Login User      | POST /user/login               | Authenticate and log in a user.                                          | - User login             |
+
+---
+
+# Package.json(Dependency)✨:-
+
+ | Serial No  | Backend  |  Frontend     |
+| ----------- | ---------|-------------- |
+| 1 | nodemon  | socket.io-client|
+| 2 | socket.io  | react-bottom-scroll |
+| 3 | cors  | react |
+| 4 | express | react-router-dom |
+
+---
+    
+Contributing
+
+     💻 Contributions are welcome! Please follow the standard guidelines for contributing.
+---
+
+
+<h1 align="center">✨Thank You✨</h1>
+
  
 
-## Insights
-
-| Route                    | Endpoint                           | Description                                                                         | Features                                   |
-| ------------------------ | ---------------------------------- | ----------------------------------------------------------------------------------- | ------------------------------------------ |
-| Add New Insight          | POST /insight/                     | Add a new insight to database and retrive data. (user Must Logged in)               | - Insight creation                         |
-| Get All Insights         | GET  /insight/getallinsight        | User can get all his insight and also do optional filtering. (user Must Logged in)  | - Get all Insight(Also do optional fliter) |
-| Add to Favorite          | PATCH /insight/addtofav/:insightId | Add insight into favorite. (user Must Logged in)                                    | - Add and Remove insight from favorites    |
-| Delete Existing Insight  | DELETE /insight/delete/:insightId  | Delete details of already existing insight. (user Must Logged in)                   | - Delete already exists insight            |
