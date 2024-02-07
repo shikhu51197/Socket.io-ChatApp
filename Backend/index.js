@@ -11,9 +11,8 @@ const users = [{}];
 
 app.use(cors());
 app.get("/", (req, res) => {
-  res.send("HELL ITS WORKING");
+  res.send( `<h1>Welcome Users , backend site is Working. click <a href=${FRONTEND_URL}>here</a> to visit frontend site.</h1>`)
 });
-
 const server = http.createServer(app);
 
 const io = socketIO(server);
@@ -52,8 +51,3 @@ server.listen(port, () => {
 });
 
 
-app.get("/", (req, res) => {
-  res.send(
-    `<h1>Welcome Users , backend site is Working. click <a href=${FRONTEND_URL}>here</a> to visit frontend site.</h1>`
-  );
-});
