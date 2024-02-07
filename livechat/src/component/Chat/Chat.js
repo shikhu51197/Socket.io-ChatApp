@@ -67,7 +67,7 @@ const Chat = () => {
     <div className="chatPage">
       <div className="chatContainer">
         <div className="header">
-          <h2>C CHAT</h2>
+          <h2>LIVE CHAT</h2>
           <a href="/">
             {" "}
             <img src={closeIcon} alt="Close" />

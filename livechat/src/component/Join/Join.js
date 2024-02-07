@@ -13,8 +13,8 @@ const Join = () => {
   return (
     <div className="JoinPage">
       <div className="JoinContainer">
-        <img src={logo} alt="logo" />
-        <h1>C CHAT</h1>
+        <img src={logo} alt="logo"  className="logo" />
+        <h1>LIVE CHAT</h1>
         <input
           onChange={(e) => setname(e.target.value)}
           placeholder="Enter Your Name"
@@ -27,7 +27,7 @@ const Join = () => {
         >
           {" "}
           <button onClick={sendUser} className="joinbtn">
-            Login In
+            Log In
           </button>
         </Link>
       </div>

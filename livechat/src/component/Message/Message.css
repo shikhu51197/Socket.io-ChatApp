@@ -10,7 +10,7 @@
 
 .right{
     float: right;
-    background-color: crimson;
+    background-color: rgb(65, 117, 2);
     color: white;
     text-align: right;
 }

@@ -1,5 +1,5 @@
 .JoinPage{
-    background-color: rgb(31, 29, 29);
+    /* background-color: rgb(194, 179, 179); */
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -7,13 +7,19 @@
     align-items: center;
 }
 
+.logo{
+    border-radius: 80px;
+}
 .JoinContainer{
-   
-   
     width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: rgb(26, 24, 24);
+    border: 3px solid rgb(236, 228, 228);
+    height:70vh;
+    padding: 20px;
+    border-radius: 80px;
 }
 
 .JoinContainer > img{
@@ -38,20 +44,22 @@
     font-size: 1.2vmax;
     margin: 2vmax;
     box-sizing: border-box;
+    border-radius: 80px;
 }
 .joinbtn{
     width: 25vmax;
-    padding: 1.5vmax;
+    padding: 1vmax;
     border: none;
     color: white;
     font-family: "Roboto";
     outline: none;
-    font-size: 1.2vmax;
-   background-color: crimson;
+    font-size: 1.8vmax;
+   background-color: rgb(134, 239, 5);
    box-sizing: border-box;
    transition: all 0.3s;
    cursor: pointer;
+   border-radius: 80px;
 }
 .joinbtn:hover{
-    background-color: rgb(180, 27, 58);
+    background-color: rgb(134, 239, 5);
 }
